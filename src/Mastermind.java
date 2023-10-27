@@ -112,7 +112,7 @@ public class Mastermind extends GuessingGame {
         Mastermind mastermind = new Mastermind();
         AllGamesRecord record = mastermind.playAll();
         System.out.println("This is the average of all played games: "+record.average());
-        for (GameRecord gamesRecord: record.highGameList(1)){
+        for (GameRecord gamesRecord: record.highGameList(2)){
             System.out.println(gamesRecord.playerID);
             System.out.println(gamesRecord.score);
         }

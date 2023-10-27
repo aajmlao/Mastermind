@@ -38,8 +38,7 @@ public class WheelOfFortunedUserGame extends WheelOfFortune{
                 }
             }
             index++;
-            System.out.println(index);
-            System.out.println(size);
+
         }
         reset();
         return contue;
