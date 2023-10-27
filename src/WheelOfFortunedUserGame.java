@@ -10,7 +10,7 @@ public class WheelOfFortunedUserGame extends WheelOfFortune{
     private int maxGuess = 15;
     private String playerId = null;
     private boolean isFirstPlay = true;
-    private int index = 0;
+    //private int index = 0;
 
     /**
      * check the playNext logic
@@ -24,7 +24,7 @@ public class WheelOfFortunedUserGame extends WheelOfFortune{
         char chr;
         int size = phraseList.size();
 
-        if(size >= index){
+        if(size != 0){
             System.out.println("Do you want to continue?(y/n)");
             while(loop){
                 chr = scanner.nextLine().charAt(0);
@@ -37,7 +37,7 @@ public class WheelOfFortunedUserGame extends WheelOfFortune{
                     System.out.println("Invalid Input. Please Enter y or n: ");
                 }
             }
-            index++;
+            //index++;
 
         }
         reset();

@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Mastermind extends GuessingGame {
     private Scanner scanner = new Scanner(System.in);
     private boolean isWin;
-    private int index = 0;
     private boolean isFirstTime = true;
     private String playerID;
 
@@ -24,7 +23,7 @@ public class Mastermind extends GuessingGame {
         char chr;
         int size = phraseList.size();
 
-        if(size > index){
+        if(size != 0 ){
             System.out.println("Do you want to continue?(y/n)");
             while(loop){
                 chr = scanner.nextLine().charAt(0);
@@ -37,7 +36,6 @@ public class Mastermind extends GuessingGame {
                     System.out.println("Invalid Input. Please Enter y or n: ");
                 }
             }
-            index++;
         }
         return contue;
     }
@@ -80,6 +78,7 @@ public class Mastermind extends GuessingGame {
         } else {
             System.out.println("You lose");
         }
+
         return gameRecord;
     }
 
